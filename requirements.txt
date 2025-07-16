@@ -1,0 +1,9 @@
+Flask==3.1.0
+tensorflow==2.19.0
+numpy==1.26.4
+Pillow==11.1.0
+openai==1.86.0
+opencv-python==4.11.0.86
+rembg==2.0.66
+mediapipe==0.10.21
+python-dotenv==0.15.0
