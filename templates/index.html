@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analizador Facial</title>
+  <meta name="description" content="Analiza emociones, edad, género, gafas, sombreros y profesión con IA" />
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Analizador Facial por IA</h1>
+      <p class="subtitle">
+        Sube una imagen y nuestra inteligencia artificial detectará emociones, edad, género, presencia de gafas, sombrero y profesión.
+      </p>
+    </div>
+
+    <div class="main-content">
+      <div class="panel image-panel" id="imagePanel">
+        <div class="drop-area" id="dropArea">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="17 8 12 3 7 8"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15"></line>
+          </svg>
+          <h3>Arrastra y Suelta una Imagen</h3>
+          <p>o</p>
+          <label for="fileInput" class="button">Seleccionar Archivo</label>
+          <input type="file" id="fileInput" accept="image/*" style="display: none;" />
+        </div>
+        <div class="image-preview" id="imagePreview" style="display: none;">
+          <img id="previewImage" alt="Vista Previa" />
+        </div>
+      </div>
+
+      <div class="panel results-panel" id="resultsPanel">
+        <div class="upload-message" id="uploadMessage">
+          <h3>Sube una imagen para analizar</h3>
+          <p>Nuestra IA identificará atributos faciales automáticamente.</p>
+          <div class="categories">
+            <div class="category-item">😃 Emociones (triste, feliz, enojado...)</div>
+            <div class="category-item">👤 Género (mujer, hombre)</div>
+            <div class="category-item">🎂 Edad (adulto, anciano, joven, niño)</div>
+            <div class="category-item">🕶️ Gafas (sí o no)</div>
+            <div class="category-item">🎩 Sombrero (sí o no)</div>
+            <div class="category-item">👔 Profesión (doctor, chef, policía...)</div>
+          </div>
+        </div>
+
+        <div class="analyzing" id="analyzing" style="display: none;">
+          <div class="loader"></div>
+          <h3>Analizando tu imagen...</h3>
+          <p>Nuestra IA está extrayendo atributos faciales...</p>
+        </div>
+
+        <div class="results" id="results" style="display: none;">
+          <div class="results-header">
+            <div class="results-badge" id="resultBadge">Análisis Completado</div>
+            <h2 id="resultTitle">Resultados faciales detectados</h2>
+          </div>
+
+          <div class="results-cards" id="resultsCards">
+            <!-- Tarjetas insertadas vía JavaScript -->
+          </div>
+
+          <div class="buttons">
+            <button id="resetButton" class="button">Analizar Otra Imagen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔥 Historia extendida generada por IA -->
+    <div id="storyContainer" style="display: none;">
+      <h2>📖 Historia Generada por IA</h2>
+      <p id="storyText" class="clamped-text"></p>
+    </div>
+
+    <!-- Cómo Funciona -->
+    <div class="how-it-works">
+      <h2>Cómo Funciona</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Subir</h3>
+          <p>Elige una imagen con una cara visible para analizar.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Analizar</h3>
+          <p>La IA detecta y analiza atributos como emoción, edad, género, profesión, etc.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Resultados</h3>
+          <p>Recibe un desglose detallado de atributos detectados y una historia generada por IA.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/app.js"></script>
+</body>
+</html>
