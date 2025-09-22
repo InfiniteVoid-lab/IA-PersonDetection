@@ -21,7 +21,7 @@ Se apoya en modelos de **Deep Learning** entrenados para clasificación de imág
 - Inferencia de género, edad, oficio y emoción a partir de modelos entrenados.  
 - Procesamiento en tiempo real desde webcam o stream.  
 - Resultados acompañados de métricas de confianza.  
-- Modelos pre-entrenados listos para usar 👉 [Descarga aquí]([https://drive.google.com/drive/folders/1wJI4dPS-6Le3Iv6YCiRT-P1O0xuLDsKg?usp=sharing](https://drive.google.com/drive/folders/1wJI4dPS-6Le3Iv6YCiRT-P1O0xuLDsKg?usp=sharing)).  
+- Modelos pre-entrenados listos para usar 👉 [Descarga aquí](https://drive.google.com/drive/folders/1wJI4dPS-6Le3Iv6YCiRT-P1O0xuLDsKg?usp=sharing](https://drive.google.com/drive/folders/1wJI4dPS-6Le3Iv6YCiRT-P1O0xuLDsKg?usp=sharing)).  
 
 ---
 
